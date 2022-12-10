@@ -16,10 +16,10 @@
 
 ## Install
 - **[Download latest](https://github.com/s0h2x/pretty_minimap/releases/download/v1.0/pretty_minimap.zip)** stable version
-- Extract zip file
-- Open this folder
-- Move sub folder to AddOns
-- Make sure the folder name is not have `-master`
+- Распакуйте zip файл
+- переместите папку в AddOns
+- Если название папки содержит "-master" то уберите этот кусок названия
+- 
 - Enjoy
 ## Settings
 - config.lua - currently only manual configuration is supported
