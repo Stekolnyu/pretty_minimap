@@ -9,4 +9,4 @@
 - Если название папки содержит "-master" то уберите этот кусок названия
 - Enjoy
 ## Settings
-- config.lua - currently only manual configuration is supported
+- config.lua - Поддерживается только ручная настройка
