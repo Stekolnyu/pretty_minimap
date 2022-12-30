@@ -15,9 +15,9 @@ function map:OnEvent(event, ...)
 		end
 	elseif event == 'CALENDAR_UPDATE_PENDING_INVITES' or event == 'PLAYER_ENTERING_WORLD' then
 		self:SetCalendarDate()
-		self:RefreshCollapseExpandButtonState(BUFF_ACTUAL_DISPLAY)
+		-- self:RefreshCollapseExpandButtonState(BUFF_ACTUAL_DISPLAY)
 	elseif event == 'UNIT_AURA' then
-		self:RefreshCollapseExpandButtonState(BUFF_ACTUAL_DISPLAY)
+		-- self:RefreshCollapseExpandButtonState(BUFF_ACTUAL_DISPLAY)
 	end
 end
 

@@ -16,22 +16,27 @@ function map:SetCalendarDate()
 	if not config.times.calendar then
 		GameTimeFrame:Hide()
 		return
+	else 
+		GameTimeFrame:Show()
 	end
-	
+
 	local _, _, day = CalendarGetDate();
+		if	day == 0 then
+			day= day + 1
+		end
 	local atlasFormat = "ui-hud-calendar-%d-%s";
-	
+
 	GameTimeFrame:ClearAllPoints()
 	GameTimeFrame:SetSize(21, 19)
 	GameTimeFrame:SetPoint('TOPRIGHT', Minimap.BorderTop, 22, -1)
 	GameTimeFrame:SetHitRectInsets(0, 0, 0, 0)
 	GameTimeFrame:GetFontString():Hide()
-	
+
 	local normal, pushed, highlight;
 	normal = GameTimeFrame:GetNormalTexture();
 	pushed = GameTimeFrame:GetPushedTexture();
 	highlight = GameTimeFrame:GetHighlightTexture();
-	
+
 	atlas(normal, atlasFormat:format(day, "up"));
 	atlas(pushed, atlasFormat:format(day, "down"));
 	atlas(highlight, atlasFormat:format(day, "mouseover"));
