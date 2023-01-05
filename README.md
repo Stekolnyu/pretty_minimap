@@ -6,7 +6,10 @@
 ## Install
 - Распакуйте zip файл
 - переместите папку в AddOns
-- Если название папки содержит "-master" то уберите этот кусок названия
+- Если название папки содержит "-master" или "-for elvui" то уберите этот кусок названия.
 - Enjoy
 ## Settings
 - config.lua - Поддерживается только ручная настройка
+
+##for elvui 
+  after installing Addon, turn off the minimap in the ElvUI settings and move some buffs
