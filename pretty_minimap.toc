@@ -5,6 +5,7 @@
 ## Version: 1.0
 ## Author: s0high
 ## OptionalDeps: Blizzard_TimeManager
+## RequiredDeps: ElvUI
 
 config.lua
 atlas.lua
